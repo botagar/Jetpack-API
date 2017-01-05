@@ -13,6 +13,6 @@ timeout(time:1, unit:'DAYS') {
 }
 node {
   stage('Deploy') {
-    sh "ansible-playbook -u '${DEPLOY_USER},' -i '${DEPLOY_HOST},' deployment/deploy.yml"
+    sh "ansible-playbook -u '${DEPLOY_USER}' -i '${DEPLOY_HOST},' deployment/deploy.yml"
   }
 }
