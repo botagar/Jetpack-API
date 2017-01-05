@@ -15,7 +15,7 @@
 
     - name: Copy app
       copy:
-        src: build/libs/demo.jar
+        src: ../build/libs/demo.jar
         dest: "{{ destination }}"
 
     - name: Generate & copy supervisord config
