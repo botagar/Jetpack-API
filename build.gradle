@@ -52,4 +52,5 @@ dependencies {
 jar {
     baseName = "demo"
     version = "0.0.1-SNAPSHOT"
+    archiveName = "${baseName}.${extension}"
 }
